@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="17" viewBox="0 0 17 17">
+  <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
+<x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c142 79.160924, 2017/07/13-01:06:39        ">
+   <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+      <rdf:Description rdf:about=""/>
+   </rdf:RDF>
+</x:xmpmeta>
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                           
+<?xpacket end="w"?></metadata>
+<defs>
+    <style>
+      .cls-1 {
+        stroke: #fff;
+        stroke-linejoin: round;
+        stroke-opacity: 0.82;
+        stroke-width: 1px;
+        fill-rule: evenodd;
+        filter: url(#filter);
+      }
+    </style>
+    <filter id="filter" x="582" y="20" width="17" height="17" filterUnits="userSpaceOnUse">
+      <feFlood result="flood" flood-color="#fff"/>
+      <feComposite result="composite" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend" in2="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g transform="translate(-582 -20)" style="fill: ; filter: url(#filter)">
+    <path id="Forma_1" data-name="Forma 1" class="cls-1" d="M593.84,34a4.729,4.729,0,0,1-1.619-.344,12.137,12.137,0,0,1-4.083-2.795,12.147,12.147,0,0,1-2.8-4.082c-0.457-1.211-.458-2.206,0-2.66,0.065-.066.132-0.136,0.2-0.208A2.154,2.154,0,0,1,587.047,23a1.807,1.807,0,0,1,1.27.814c1.257,1.563.69,2.12,0.034,2.766l-0.116.115c-0.107.107-.31,0.6,1.577,2.49a10.466,10.466,0,0,0,1.56,1.339,0.966,0.966,0,0,0,.931.237l0.117-.118c0.645-.654,1.2-1.219,2.765.037A1.8,1.8,0,0,1,596,31.95a2.143,2.143,0,0,1-.908,1.507c-0.072.069-.142,0.136-0.208,0.2A1.442,1.442,0,0,1,593.84,34ZM587,23.371a1.969,1.969,0,0,0-1.195.792c-0.071.075-.14,0.147-0.207,0.215-0.34.339-.305,1.229,0.087,2.269A11.781,11.781,0,0,0,588.4,30.6a11.783,11.783,0,0,0,3.953,2.71c1.041,0.393,1.931.426,2.27,0.088,0.068-.068.14-0.137,0.215-0.207a1.9,1.9,0,0,0,.792-1.224,1.5,1.5,0,0,0-.675-1c-1.3-1.047-1.667-.677-2.271-0.065l-0.118.119c-0.289.289-.757,0.225-1.394-0.189a10.8,10.8,0,0,1-1.621-1.387c-1.565-1.565-2.066-2.522-1.576-3.013l0.118-.117c0.614-.6.984-0.968-0.063-2.27a1.5,1.5,0,0,0-1-.675H587Z" style="stroke: inherit; filter: none; fill: inherit"/>
+  </g>
+  <use transform="translate(-582 -20)" xlink:href="#Forma_1" style="stroke: #fff; filter: none; fill: none"/>
+</svg>
