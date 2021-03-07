@@ -27,6 +27,8 @@ $ (function (){
   //     .trigger('refresh');
   // });
 
+  $('.brands__select').styler();
+
   $('.header-top__item-filter').styler();
 
   $('.connection__select').styler();

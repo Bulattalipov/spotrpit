@@ -53,7 +53,7 @@
   &__item-input{
     margin: 0;
     width: 215px;
-    border: 2px solid #959595;
+    border: 2px solid $default;
     border-radius: 4px;
     background-color: #f8f6f6;
     color: #c0bebe;
@@ -68,7 +68,7 @@
     width: 32px;
     margin: 0;
     margin-left: -34px;
-    background-color: #959595;
+    background-color: $default;
     border: none;
     display: flex;
     justify-content: center;
@@ -412,7 +412,7 @@ ul.header-botton__list{
     justify-content: center;
     align-items: center;
     path{
-      fill: #959595;
+      fill: $default;
     }
   }
   .slick-prev {
@@ -446,13 +446,13 @@ ul.header-botton__list{
       background-color: transparent;
       font-size: 20px;
       line-height: 27px;
-      color: #959595;
-      border-bottom: 2px solid #959595;
+      color: $default;
+      border-bottom: 2px solid $default;
       padding: 0 15px;
       cursor: pointer;
     }
     .slick-active{
-      border-bottom: 4px solid #959595;
+      border-bottom: 4px solid $default;
       cursor: pointer;
     }
   }
@@ -461,7 +461,7 @@ ul.header-botton__list{
     content:'0';
     display:inline-block;
     font-size:13px;
-    color:#959595;
+    color: $default;
     font-size: 20px;
     line-height: 27px;
   }
@@ -653,7 +653,7 @@ ul.header-botton__list{
     width: 24px;
     height: 24px;
     border-radius: 50%;
-    border: 1px solid #959595;
+    border: 1px solid $default;
     margin-left: -30px; 
   }
   &__form-input:checked + .connection__form-checkbox::before{
@@ -696,7 +696,7 @@ ul.header-botton__list{
     font-size: 16px;
     color: #000;
     background-color: #F8F6F6;
-    border: 1px solid #959595;
+    border: 1px solid $default;
     box-shadow: inset 0px 2px 1px 0px rgba(114, 111, 111, 0.75);
   }
   .jq-selectbox__trigger{
@@ -767,7 +767,117 @@ ul.header-botton__list{
   }
 }
 
+.alphabet{
+  display: block;
+  justify-content: space-between;
+  &__wrapper{
+    display: flex;
+    color: #000;
+  }
+  &__list{
+    display: flex;
+    flex-wrap: wrap;
+    overflow-x: auto;
+    white-space: nowrap;
+    padding-bottom: 15px !important;
+  }
+  &__item{
+    margin-left: 14px;
+  }
+  &__item-link{
+    color: #000;
+    &:hover{
+      border-bottom: 2px solid #000;
+    }
+  }
+}
 
+.brands{
+  color: #000;
+  padding-bottom: 70px;
+  &__select{
+    display: block;
+    margin: 15px 0 25px auto;
+    width: 185px;
+  }
+  &__title{
+    margin-bottom: 60px;
+  }
+  &__item{
+    display: flex;
+    margin-bottom: 65px;
+  }
+  &__item-title{
+    font-size: 50px;
+    line-height: 55px;
+    margin-top: -20px;
+    margin-right: 17px;
+    color: $default;
+  }
+  &__list-item{
+    flex: 1 0 25%;
+    max-width: 25%; 
+    padding: 0 10px 10px 0; 
+  }
+  &__list-link{
+    color: #000;
+    line-height: 24px;
+    span{
+      color: $default;
+    }
+  }
+  .jq-selectbox__select{
+    height: 27px;
+    border: 1px solid $default;
+    background: none;
+    box-shadow: inset 0px 2px 1px 0px rgba(114, 111, 111, 0.75);
+    background-color: #f8f6f6;
+    line-height: 26px;
+    padding: 0 30px 0 10px;
+  }
+  .jq-selectbox__trigger{
+    border: none;
+    width: 25px;  
+  }
+  .jq-selectbox__trigger-arrow{
+    border: none;
+    background-image: url('../images/icon/arrow-down--black.svg');
+    background-repeat: no-repeat;
+    width: 9px;
+    height: 5px;
+    top: 11px;
+    right: 8px;
+  }
+}
+
+ul.brands__list{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+
+
+
+.pagination{
+  display: flex;
+  justify-content: flex-end;
+  &__list{
+    display: flex;
+  }
+  &__text{
+    margin-right: 18px;
+  }
+  &__item + .pagination__item{
+    margin-left: 16px;
+  }
+  &__item-link{
+    color: #000;
+  }
+  &__item-link--active{
+    @extend %sourceSansPro-700;
+  }
+}
 
 
 

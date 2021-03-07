@@ -24,3 +24,39 @@ body{
   color: #000;
   text-align: center;
 }
+
+.breadcrubs{
+  padding: 45px 0 10px;
+  &__list{
+    display: flex;
+  }
+  &__item{
+    padding-right: 17px;
+    position: relative;
+    &::after{
+      content: '';
+      position: absolute;
+      background-image: url('../images/icon/yellow-arrow.svg');
+      background-repeat: no-repeat;
+      width: 5px;
+      height: 6px;
+      right: 5px;
+      top: 10px;
+    }
+    &:last-child{
+      padding-right: 0;
+      .breadcrubs__item-link{
+        color: #000;
+        border: none;
+      }
+      &::after{
+        display: none;
+      }
+    }
+  }
+  &__item-link{
+    color: $default;
+    border-bottom: 2px solid $default;
+  }
+}
+
