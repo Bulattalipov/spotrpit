@@ -27,3 +27,11 @@ $default: #959595;
   font-family: 'SourceSansPro-Regular', sans-serif;
   font-weight: 400;
 }
+
+%checked-hidden{
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}

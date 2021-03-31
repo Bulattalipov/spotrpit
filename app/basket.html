@@ -84,27 +84,27 @@
           </a>
           <ul class="header-botton__list">
             <li class="header-botton__list-icon">
-              <a class="header-botton__list-link" href="#">
+              <a class="header-botton__list-link" href="catalog.html">
                 Каталог
               </a>
             </li>
             <li class="header-botton__list-icon">
-              <a class="header-botton__list-link" href="#">
+              <a class="header-botton__list-link" href="manufacturers.html">
                 Производители
               </a>
             </li>
             <li class="header-botton__list-icon">
-              <a class="header-botton__list-link" href="#">
+              <a class="header-botton__list-link" href="discounts.html">
                 Скидки
               </a>
             </li>
             <li class="header-botton__list-icon">
-              <a class="header-botton__list-link" href="#">
+              <a class="header-botton__list-link" href="delivery.html">
                 Доставка и оплата
               </a>
             </li>
             <li class="header-botton__list-icon">
-              <a class="header-botton__list-link" href="#">
+              <a class="header-botton__list-link" href="about-us.html">
                 О компании
               </a>
             </li>
@@ -115,29 +115,123 @@
   </header>
 
   <main class="main">
-    <div class="page-404">
+    <section class="basket">
       <div class="container">
-        <div class="page-404__inner">
-          <div class="page-404__content">
-            <div class="page-404__content-title">
-              404
-            </div>
-            <div class="page-404__content-subtitle">
-              Страница не найдена
-            </div>
-            <p class="page-404__content-text">
-              Страница на которую вы попали не существует, возможно вы не правильно ввели адрес или страница была удалена
-            </p>
-            <a class="page-404__content-link" href="#">
-              Вернуться на главную
-            </a>
+        <h2 class="title basket__title">Оформление заказа</h2>
+        <div class="basket__lines">
+          <div class="basket__lines-wrapper">
+            <div class="basket__line"></div>
+            <div class="basket__line"></div>
+            <div class="basket__line"></div>
           </div>
-          <div class="page-404__box">
-            <img class="page-404__box-image" src="images/tablets.png" alt="">
+        </div>
+        <div class="basket__items">
+          <a class="basket__item" href="#">
+            <div class="basket__box-icon">
+              <img class="basket__icon" src="images/icon/info-icon.svg" alt="backet icons">
+            </div>
+            <div class="basket__item-text">Контактная информация</div>
+          </a>
+          <a class="basket__item" href="#">
+            <div class="basket__box-icon">
+              <img class="basket__icon" src="images/icon/delivery-icon.svg" alt="backet icons">
+            </div>
+            <div class="basket__item-text">Доставка</div>
+          </a>
+          <a class="basket__item" href="#">
+            <div class="basket__box-icon">
+              <img class="basket__icon" src="images/icon/creditCard-basked.svg" alt="backet icons">
+            </div>
+            <div class="basket__item-text">Оплата</div>
+          </a>
+          <a class="basket__item" href="#">
+            <div class="basket__box-icon">
+              <img class="basket__icon" src="images/icon/confirmation-icon.svg" alt="backet icons">
+            </div>
+            <div class="basket__item-text">Подтверждение</div>
+          </a>
+        </div>
+        <div class="basket__inner">
+          <div class="basket__info">
+            <h3 class="basket__info-title">Контактная информация</h3>
+            <form class="basket-form" action="#">
+              <p class=" basket-form__title">ФИО*</p>
+              <input class="basket-form__input" type="text">
+              <p class="basket-form__title">Телефон*</p>
+              <input class="basket-form__input" type="text">
+              <p class="basket-form__title">Город*</p>
+              <input class="basket-form__input" type="text">
+              <label class="basket-form__confirmation">
+                <input class="basket-form__confirmation-input" type="checkbox">
+                <span class="basket-form__confirmation-checkbox"></span>
+                <span class="basket-form__confirmation-text">
+                Подтверждаю, что я ознакомлен и согласен с условиями <a href="#">Политики обработки персональных данных</a>
+                </span>
+              </label>
+              <button class="basket-form__btn" type="submit">Продолжить</button>
+            </form>
+          </div>
+          <div class="basket__order">
+            <h3 class="basket__order-title">Ваш заказ</h3>
+            <div class="basket-order__items">
+              <div class="basket-order__item">
+                <div class="basket-order__item-inner">
+                  <div class="basket-order__info">
+                    <div class="basket-order__info-box">
+                      <img class="basket-order__img" src="images/basket/1.png" alt="">
+                      <div class="basket-order__content">
+                        <div class="basket-order__content-title">Vitamin C-1000 Sustained Release</div>
+                        <p class="basket-order__content-number">100 капсул</p>
+                        <p class="basket-order__content-taste">Вкус:<span>Банан</span></p>
+                        <div class="basket-order__quantity">
+                          <div class="basket-order__quantity-text">
+                            Количесвто:
+                          </div>
+                          <input class="basket-order__quantity-input" type="number" value="1">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <button class="basket-order__remove">
+                    <img src="images/icon/remove.svg" alt="">
+                  </button>
+                </div>
+                <div class="basket-order__price">
+                  Сумма: <span>750 руб</span>
+                </div>
+              </div>
+              <div class="basket-order__item">
+                <div class="basket-order__item-inner">
+                  <div class="basket-order__info">
+                    <div class="basket-order__info-box">
+                      <img class="basket-order__img" src="images/basket/2.png" alt="">
+                      <div class="basket-order__content">
+                        <div class="basket-order__content-title">R3Build EDGE 475г 1.05lb BSN</div>
+                        <p class="basket-order__content-number">Порошок <span>25 порций</span></p>
+                        <p class="basket-order__content-taste">Вкус:<span>Банан</span></p>
+                        <div class="basket-order__quantity">
+                          <div class="basket-order__quantity-text">
+                            Количесвто:
+                          </div>
+                          <input class="basket-order__quantity-input" type="number" value="1">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <button class="basket-order__remove">
+                    <img src="images/icon/remove.svg" alt="">
+                  </button>
+                </div>
+                <div class="basket-order__price">
+                  Сумма: <span>1980 руб</span>
+                </div>
+              </div>
+              <div class="basket-order__total">Общая сумма заказа: <span>2730 руб</span></div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
+    </section>
   </main>
 
   <footer class="footer">

@@ -89,12 +89,12 @@
               </a>
             </li>
             <li class="header-botton__list-icon">
-              <a class="header-botton__list-link" href="brands.html">
+              <a class="header-botton__list-link" href="manufacturers.html">
                 Производители
               </a>
             </li>
             <li class="header-botton__list-icon">
-              <a class="header-botton__list-link" href="#">
+              <a class="header-botton__list-link" href="discounts.html">
                 Скидки
               </a>
             </li>
@@ -115,60 +115,124 @@
   </header>
 
   <main class="main">
-    <section class="top-slider">
+    <div class="breadcrubs">
       <div class="container">
-        <div class="top-slider__wrapper">
-          <div class="top-slider__item">
-            <h1 class="top-slider__title">
-              Акция <span>2+1</span>
-            </h1>
-            <p class="top-slider__subtitle">
-              При покупке двух джемов от Slimfruit третий получаешь в подарок!
-            </p>
-            <img class="top-slider__img" src="images/top-slider/1.png" alt="slider img">
-            <button class="top-slider__btn">
-              <p class="top-slider__btn-text">
-                Положить в корзину
-              </p>
-            </button>
+        <ul class="breadcrubs__list">
+          <li class="breadcrubs__item">
+            <a class="breadcrubs__item-link" href="#">Главная</a>
+          </li>
+          <li class="breadcrubs__item">
+            <a class="breadcrubs__item-link" href="#">Каталог</a>
+          </li>
+          <li class="breadcrubs__item">
+            <a class="breadcrubs__item-link" href="#">Аминокислоты</a>
+          </li>
+          <li class="breadcrubs__item">
+            <a class="breadcrubs__item-link" href="#">Regeneration 2:1:1 ВСАА 300 g</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <section class="product">
+      <div class="container">
+        <div class="product__inner">
+          <div class="product__box-img">
+            <img class="product__img" src="images/product-img.png" alt="product img">
           </div>
-          <div class="top-slider__item">
-            <h1 class="top-slider__title">
-              Акция <span>2+1</span>
-            </h1>
-            <p class="top-slider__subtitle">
-              При покупке двух джемов от Slimfruit третий получаешь в подарок!
-            </p>
-            <img class="top-slider__img" src="images/top-slider/1.png" alt="slider img">
-            <button class="top-slider__btn">
-              <p class="top-slider__btn-text">
-                Положить в корзину
-              </p>
-            </button>
-          </div>
-          <div class="top-slider__item">
-            <h1 class="top-slider__title">
-              Акция <span>2+1</span>
-            </h1>
-            <p class="top-slider__subtitle">
-              При покупке двух джемов от Slimfruit третий получаешь в подарок!
-            </p>
-            <img class="top-slider__img" src="images/top-slider/1.png" alt="slider img">
-            <button class="top-slider__btn">
-              <p class="top-slider__btn-text">
-                Положить в корзину
-              </p>
-            </button>
+          <div class="product__content">
+            <h2 class="title product__title">Regeneration 2:1:1 ВСАА 300 g </h2>
+            <div class="product__category">
+              Аминокислоты
+            </div>
+            <div class="product__category">
+              BCAA
+            </div>
+            <div class="product__manufacturers">
+              Бренд: <span>Reg Pharm</span>
+            </div>
+            <div class="product__country">
+              Страна: <span>США</span>
+            </div>
+            <div class="product__type">
+              Форма выпуска: <span>Порошок</span>
+            </div>
+            <div class="product__quantity">
+              Количество порций: <span>40</span>
+            </div>
+            <div class="product__info">
+              <p class="product__info-text">В наличии</p>
+              <div class="star" data-rateyo-rating="4.5"></div>
+            </div>
+            <div class="product__price">
+              1690 руб
+            </div>
+            <form class="product-form" action="">
+              <div class="product-form__number">
+                <p class="product-form__number-text">
+                  Выбрать количество
+                </p>
+                <input class="product-form__number-input" type="number" value="1" min="1">
+              </div>
+              <div class="product-form__taste">
+                <p class="product-form__taste-text">
+                  Выбрать вкус
+                </p>
+                <select class="product-form__taste-select">
+                  <option value="1">Банан</option>
+                  <option value="">Манго</option>
+                  <option value="">Киви</option>
+                  <option value="">Ананас</option>
+                </select>
+              </div>
+              <div class="product-form__buttons">
+                <button class="product-form__button">
+                  <p class="product-form__button-text">Купить</p>
+                </button>
+                <button class="product-form__button">Купить в 1 клик</button>
+              </div>
+            </form>
           </div>
         </div>
+        <div class="product-description">
+          <h4 class="product-description__title">
+            Описание
+          </h4>
+          <p class="product-description__text">
+            BCAA 2:1:1 от Regeneration Pharm представляет собой уже ставшей классикой разветвленная цепочка из 3
+            аминокислот- Лейцина, Изолейцина, Валина с самым рабочим соотношением 2:1:1.
+          </p>
+          <p class="product-description__subtitle">
+            Regeneration 2:1:1 ВСАА 300 g способствует:
+          </p>
+          <ul class="product-description__list">
+            <li class="product-description__list-item">
+              усилению синтеза белков (анаболизму)
+            </li>
+            <li class="product-description__list-item">
+              улучшению ресинтеза гликогена
+            </li>
+            <li class="product-description__list-item">
+              увеличению чувствительности к инсулину
+            </li>
+            <li class="product-description__list-item">
+              анти-катаболизму
+            </li>
+            <li class="product-description__list-item">
+              увеличению порога мышечной выносливости во время тренировки
+            </li>
+            <li class="product-description__list-item">
+              сокращению периода восстановления после тренировки
+            </li>
+            <li class="product-description__list-item">
+              повышению устойчивости к мышечной усталости
+            </li>
+          </ul>
+        </div>
       </div>
-    </section>
-    <section class="hit">
-      <div class="container container__hit">
-        <div class="hit__inner">
-          <h2 class="title hit__title">
-            Хиты продаж
-          </h2>
+      <div class="related">
+        <div class="container__hit">
+          <h2 class="title related__title">С этим товаром покупают</h2>
           <div class="hit__slider">
             <div class="product-item">
               <a class="product-item__link-img" href="#">
@@ -434,31 +498,31 @@
             <div class="product-item">
               <<a class="product-item__link-img" href="#">
                 <img class="product-item__img" src="images/hit/2.png" alt="product image">
-              </a>
-              <button class="product-item__btn">
-                <p class="product-item__btn-text">
-                  Положить в корзину
-                </p>
-              </button>
-              <a class="product-item__content" href="#">
-                <h4 class="product-item__content-title">
-                  Animal Pak 44 пак. (Universal Nutrition)
-                </h4>
-                <p class="product-item__content-text">
-                  В наличии
-                </p>
-                <div class="product-item__botton">
-                  <div class="product-item__price">
-                    <div class="product-item__price-big">
-                      2990 руб
+                </a>
+                <button class="product-item__btn">
+                  <p class="product-item__btn-text">
+                    Положить в корзину
+                  </p>
+                </button>
+                <a class="product-item__content" href="#">
+                  <h4 class="product-item__content-title">
+                    Animal Pak 44 пак. (Universal Nutrition)
+                  </h4>
+                  <p class="product-item__content-text">
+                    В наличии
+                  </p>
+                  <div class="product-item__botton">
+                    <div class="product-item__price">
+                      <div class="product-item__price-big">
+                        2990 руб
+                      </div>
+                      <div class="product-item__price-small">
+                        3490 руб
+                      </div>
                     </div>
-                    <div class="product-item__price-small">
-                      3490 руб
-                    </div>
+                    <div class="star"></div>
                   </div>
-                  <div class="star"></div>
-                </div>
-              </a>
+                </a>
             </div>
             <div class="product-item">
               <a class="product-item__link-img" href="#">
@@ -522,90 +586,6 @@
         </div>
       </div>
     </section>
-    <section class="advantage">
-      <div class="container">
-        <h2 class="title advantage__title">
-          Почему нас выбирают
-        </h2>
-        <div class="advantage__items">
-          <div class="advantage__item">
-            <div class="advantage__item-box">
-              <img class="advantage__item-icon" src="images/icon/points_small.png" alt="">
-              <span>
-                <img class="advantage__item-img" src="images/icon/kremlin-icon.png" alt="advantages icon">
-              </span>
-            </div>
-            <p class="advantage__item-text">
-              Доставка по всей России
-            </p>
-          </div>
-          <div class="advantage__item">
-            <div class="advantage__item-box">
-              <img class="advantage__item-icon" src="images/icon/points_small.png" alt="">
-              <span>
-                <img class="advantage__item-img" src="images/icon/coin-icon.svg" alt="advantages icon">
-              </span>
-            </div>
-            <p class="advantage__item-text">
-              Низкие цены, акции и скидки
-            </p>
-          </div>
-          <div class="advantage__item">
-            <div class="advantage__item-box">
-              <img class="advantage__item-icon" src="images/icon/points_small.png" alt="">
-              <span>
-                <img class="advantage__item-img" src="images/icon/certificate-icon.svg" alt="advantages icon">
-              </span>
-            </div>
-            <p class="advantage__item-text">
-              Сертифицированная продукция
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="connection">
-      <div class="container">
-        <h2 class="title connection__title">
-          Не определились с выбором?
-        </h2>
-        <div class="connection__content">
-          <div class="connection__box-img">
-            <img class="connection__img" src="images/connection-img.jpg" alt="connection image">
-          </div>
-          <form class="connection__form" action="#">
-            <div class="connection__form-text">
-              Оставьте заявку и наш консультант свяжется с вами в ближайшее время
-            </div>
-            <div class="connection__form-subtitle">
-              Ваш пол
-            </div>
-            <div class="connection__form-box">
-              <label class="connection__lebel">
-                <input class="connection__form-input" type="radio" name="floor" checked>
-                <span class="connection__form-checkbox"></span>
-                Мужской
-              </label> 
-              <label class="connection__lebel">
-                <input class="connection__form-input" type="radio" name="floor">
-                <span class="connection__form-checkbox"></span>
-                Женский
-              </label>
-            </div>
-            <select class="connection__select">
-              <option value="1">Желаемая цель</option>
-              <option value="">Еженедельная цель</option>
-              <option value="">Ежемесячная цель</option>
-            </select>
-            <select class="connection__select">
-              <option value="1">Ваша активность</option>
-              <option value="">Ваша неактивность</option>
-            </select>
-            <button class="connection__btn" type="submit">Оставить заявку</button>
-          </form>
-        </div>
-      </div>
-    </section> 
   </main>
 
   <footer class="footer">
@@ -619,22 +599,22 @@
         <div class="footer__item footer__item-list">
           <ul class="footer__list">
             <li class="footer__list-item">
-              <a class="footer__list-link" href="#">
+              <a class="footer__list-link" href="catalog.html">
                 Каталог
               </a>
             </li>
             <li class="footer__list-item">
-              <a class="footer__list-link" href="#">
+              <a class="footer__list-link" href="manufacturers.html">
                 Производители
               </a>
             </li>
             <li class="footer__list-item">
-              <a class="footer__list-link" href="#">
+              <a class="footer__list-link" href="discounts.html">
                 Скидки
               </a>
             </li>
             <li class="footer__list-item">
-              <a class="footer__list-link" href="#">
+              <a class="footer__list-link" href="delivery.html">
                 Доставка и оплата
               </a>
             </li>
@@ -673,7 +653,7 @@
         </div>
       </div>
     </div>
-  </footer> 
+  </footer>
 
 
   <script src="js/main.min.js"></script>

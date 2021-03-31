@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sportpit</title>
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="header-top">
+      <div class="container">
+        <div class="header-top__inner">
+          <div class="header-top__item">
+            <div class="header-top__item-select">
+              <span>ваш город</span>
+              <select class="header-top__item-filter">
+                <option value="1">Москва</option>
+                <option value="">Казань</option>
+                <option value="">Екатеринбург</option>
+                <option value="">Сочи</option>
+              </select>
+            </div>
+          </div>
+          <div class="header-top__item">
+            <div class="contacts">
+              <a class="contacts__tel" href="tel:+79233454545">+7 (923) 345- 45-45</a>
+              <a class="contacts__email" href="mailto:body_sport@gmail.com">body_sport@gmail.com</a>
+            </div>
+          </div>
+          <div class="header-top__item">
+            <a class="header-top__item-link" href="#">
+              Заказать звонок
+            </a>
+          </div>
+          <div class="header-top__item">
+            <form class="header-top__item-form" action="#">
+              <input class="header-top__item-input" type="text" placeholder="Поиск">
+              <button class="header-top__item-btn">
+                <img class="header-top__item-search" src="images/icon/search.svg" alt="search icon">
+              </button>
+            </form>
+          </div>
+          <div class="header-top__item">
+            <ul class="socials__list">
+              <li class="socials__list-item">
+                <a class="socials__list-link" href="#">
+                  <img class="socials__list-icon" src="images/icon/vk.png" alt="social icons">
+                </a>
+              </li>
+              <li class="socials__list-item">
+                <a class="socials__list-link" href="#">
+                  <img class="socials__list-icon" src="images/icon/facebook.png" alt="social icons">
+                </a>
+              </li>
+              <li class="socials__list-item">
+                <a class="socials__list-link" href="#">
+                  <img class="socials__list-icon" src="images/icon/instagram.png" alt="social icons">
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="header-top__item">
+            <a class="header-top__basket" href="#">
+              <p class="header-top__basket-text">
+                Корзина
+              </p>
+              <div class="header-top__basket-box">
+                <img class="header-top__basket-img" src="images/icon/basket.svg" alt="basket icon">
+                <span>2</span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="header-botton">
+      <div class="container">
+        <div class="header-botton__inner">
+          <a class="logo" href="#">
+            <img src="images/logo.png" alt="logo">
+          </a>
+          <ul class="header-botton__list">
+            <li class="header-botton__list-icon">
+              <a class="header-botton__list-link" href="#">
+                Каталог
+              </a>
+            </li>
+            <li class="header-botton__list-icon">
+              <a class="header-botton__list-link" href="#">
+                Производители
+              </a>
+            </li>
+            <li class="header-botton__list-icon">
+              <a class="header-botton__list-link" href="#">
+                Скидки
+              </a>
+            </li>
+            <li class="header-botton__list-icon">
+              <a class="header-botton__list-link" href="#">
+                Доставка и оплата
+              </a>
+            </li>
+            <li class="header-botton__list-icon">
+              <a class="header-botton__list-link" href="#">
+                О компании
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="main">
+    <div class="breadcrubs">
+      <div class="container">
+        <ul class="breadcrubs__list">
+          <li class="breadcrubs__item">
+            <a class="breadcrubs__item-link" href="#">Главная</a>
+          </li>
+          <li class="breadcrubs__item">
+            <a class="breadcrubs__item-link" href="#">Каталог</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <section class="catalog">
+      <div class="container">
+        <h2 class="title catalog__title">Каталог</h2>
+        <div class="catalog__boxSelect">
+          <div class="catalog__boxSelect-text">Сортировать по</div>
+          <select class="catalog__boxSelect-select">
+            <option value="1">15</option>
+            <option value="1">25</option>
+            <option value="1">35</option>
+          </select>
+        </div>
+        <div class="catalog__inner">
+          <form class="catalog__filters filter">
+            <div class="filter-category">
+              <div class="filter__title">
+                Категории
+              </div>
+              <div class="filter-category__box-form">
+                <label class="filter-category__label">
+                  <input class="filter-category__input" type="checkbox" checked>
+                  <span class="filter-category__checkbox"></span>
+                  <span class="filter-category__text">Аминокислоты</span>
+                </label>
+                <label class="filter-category__label">
+                  <input class="filter-category__input" type="checkbox">
+                  <span class="filter-category__checkbox"></span>
+                  <span class="filter-category__text">Протеин</span>
+                </label>
+                <label class="filter-category__label">
+                  <input class="filter-category__input" type="checkbox">
+                  <span class="filter-category__checkbox"></span>
+                  <span class="filter-category__text">BCAA</span>
+                </label>
+                <label class="filter-category__label">
+                  <input class="filter-category__input" type="checkbox">
+                  <span class="filter-category__checkbox"></span>
+                  <span class="filter-category__text">Витамины</span>
+                </label>
+                <label class="filter-category__label">
+                  <input class="filter-category__input" type="checkbox">
+                  <span class="filter-category__checkbox"></span>
+                  <span class="filter-category__text">Креатин</span>
+                </label>
+                <label class="filter-category__label">
+                  <input class="filter-category__input" type="checkbox">
+                  <span class="filter-category__checkbox"></span>
+                  <span class="filter-category__text">Послетренировочные</span>
+                </label>
+                <label class="filter-category__label">
+                  <input class="filter-category__input" type="checkbox">
+                  <span class="filter-category__checkbox"></span>
+                  <span class="filter-category__text">Предтренировочные</span>
+                </label>
+                <label class="filter-category__label">
+                  <input class="filter-category__input" type="checkbox">
+                  <span class="filter-category__checkbox"></span>
+                  <span class="filter-category__text">Жиросжигатели</span>
+                </label>
+                <label class="filter-category__label">
+                  <input class="filter-category__input" type="checkbox">
+                  <span class="filter-category__checkbox"></span>
+                  <span class="filter-category__text">Гейнеры</span>
+                </label>
+                <label class="filter-category__label">
+                  <input class="filter-category__input" type="checkbox">
+                  <span class="filter-category__checkbox"></span>
+                  <span class="filter-category__text">Изотоники</span>
+                </label>
+                <label class="filter-category__label">
+                  <input class="filter-category__input" type="checkbox">
+                  <span class="filter-category__checkbox"></span>
+                  <span class="filter-category__text">Батончики и десерты</span>
+                </label>
+              </div>
+              <a href="#" class="filter-category__link">Показать еще</a>
+            </div>
+            <div class="filter-manufacturers">
+              <div class="filter__title">
+                Производители
+              </div>
+              <div class="filter-manufacturers__box-form">
+                <label class="filter-manufacturers__label">
+                  <input class="filter-manufacturers__input" type="checkbox" checked>
+                  <span class="filter-manufacturers__checkbox"></span>
+                  <span class="filter-manufacturers__text">Now</span>
+                </label>
+                <label class="filter-manufacturers__label">
+                  <input class="filter-manufacturers__input" type="checkbox">
+                  <span class="filter-manufacturers__checkbox"></span>
+                  <span class="filter-manufacturers__text">Amix Nutrition</span>
+                </label>
+                <label class="filter-manufacturers__label">
+                  <input class="filter-manufacturers__input" type="checkbox">
+                  <span class="filter-manufacturers__checkbox"></span>
+                  <span class="filter-manufacturers__text">Anna nova nutrition</span>
+                </label>
+                <label class="filter-manufacturers__label">
+                  <input class="filter-manufacturers__input" type="checkbox">
+                  <span class="filter-manufacturers__checkbox"></span>
+                  <span class="filter-manufacturers__text">Arnold series</span>
+                </label>
+                <label class="filter-manufacturers__label">
+                  <input class="filter-manufacturers__input" type="checkbox">
+                  <span class="filter-manufacturers__checkbox"></span>
+                  <span class="filter-manufacturers__text">BSN</span>
+                </label>
+              </div>
+              <a href="#" class="filter-manufacturers__link">Показать еще</a>
+            </div>
+            <div class="filter-price">
+              <div class="filter__title">
+                Цена
+              </div>
+              <div class="filter-price__box-form">
+                <input class="filter-price__input" type="text"  id="input"
+                data-type="double"
+                data-min="0"
+                data-max="3000"
+                data-from="750"
+                data-to="2300">
+                <div class="filter-price__inputs">
+                  от
+                  <input class="filter-price__inputs-from" id="input__from">
+                  до
+                  <input class="filter-price__inputs-to" id="input__to">
+                </div>
+                <div class="filter-price__buttons">
+                  <button class="filter-price__buttons-show">
+                    Показать
+                  </button>
+                  <button class="filter-price__buttons-reset">
+                    Сбросить
+                  </button>
+                </div>
+              </div>
+            </div>
+          </form>
+          <div class="catalog-content">
+            <div class="catalog-content__items">
+              <div class="product-item">
+                <a class="product-item__link-img" href="#">
+                  <img class="product-item__img" src="images/hit/1.png" alt="product image">
+                </a>
+                <button class="product-item__btn">
+                  <p class="product-item__btn-text">
+                    Положить в корзину
+                  </p>
+                </button>
+                <a class="product-item__content" href="#">
+                  <h4 class="product-item__content-title">
+                    BCAA Powder 12000 228 гр (Ultimate Nutrition)
+                  </h4>
+                  <p class="product-item__content-text">
+                    В наличии
+                  </p>
+                  <div class="product-item__botton">
+                    <div class="product-item__price">
+                      <div class="product-item__price-big">
+                        750 руб
+                      </div>
+                      <div class="product-item__price-small">
+                        1050 руб
+                      </div>
+                    </div>
+                    <div class="star"  data-rateyo-rating="4.5"></div>
+                  </div>
+                </a>
+              </div>
+              <div class="product-item">
+                <a class="product-item__link-img" href="#">
+                  <img class="product-item__img" src="images/hit/2.png" alt="product image">
+                </a>
+                <button class="product-item__btn">
+                  <p class="product-item__btn-text">
+                    Положить в корзину
+                  </p>
+                </button>
+                <a class="product-item__content" href="#">
+                  <h4 class="product-item__content-title">
+                    Animal Pak 44 пак. (Universal Nutrition)
+                  </h4>
+                  <p class="product-item__content-text">
+                    В наличии
+                  </p>
+                  <div class="product-item__botton">
+                    <div class="product-item__price">
+                      <div class="product-item__price-big">
+                        2990 руб
+                      </div>
+                      <div class="product-item__price-small">
+                        3490 руб
+                      </div>
+                    </div>
+                    <div class="star" data-rateyo-rating="3.5"></div>
+                  </div>
+                </a>
+              </div>
+              <div class="product-item">
+                <a class="product-item__link-img" href="#">
+                  <img class="product-item__img" src="images/hit/3.png" alt="product image">
+                </a>
+                <button class="product-item__btn">
+                  <p class="product-item__btn-text">
+                    Положить в корзину
+                  </p>
+                </button>
+                <a class="product-item__content" href="#">
+                  <h4 class="product-item__content-title">
+                    Whey Protein 2268 гр 5lb (RPS Nutrition)
+                  </h4>
+                  <p class="product-item__content-text">
+                    В наличии
+                  </p>
+                  <div class="product-item__botton">
+                    <div class="product-item__price">
+                      <div class="product-item__price-big">
+                        2210 руб
+                      </div>
+                      <div class="product-item__price-small">
+                        2880 руб
+                      </div>
+                    </div>
+                    <div class="star" data-rateyo-rating="5"></div>
+                  </div>
+                </a>
+              </div>
+              <div class="product-item">
+                <a class="product-item__link-img" href="#">
+                  <img class="product-item__img" src="images/hit/1.png" alt="product image">
+                </a>
+                <button class="product-item__btn">
+                  <p class="product-item__btn-text">
+                    Положить в корзину
+                  </p>
+                </button>
+                <a class="product-item__content" href="#">
+                  <h4 class="product-item__content-title">
+                    Lean Protein Shake 750 гр (VPLab Nutrition)
+                  </h4>
+                  <p class="product-item__content-text">
+                    В наличии
+                  </p>
+                  <div class="product-item__botton">
+                    <div class="product-item__price">
+                      <div class="product-item__price-big">
+                        2220 руб
+                      </div>
+                      <div class="product-item__price-small">
+                        2900 руб
+                      </div>
+                    </div>
+                    <div class="star" data-rateyo-rating="4.5"></div>
+                  </div>
+                </a>
+              </div>
+              <div class="product-item">
+                <a class="product-item__link-img" href="#">
+                  <img class="product-item__img" src="images/hit/1.png" alt="product image">
+                </a>
+                <button class="product-item__btn">
+                  <p class="product-item__btn-text">
+                    Положить в корзину
+                  </p>
+                </button>
+                <a class="product-item__content" href="#">
+                  <h4 class="product-item__content-title">
+                    BCAA Powder 12000 228 гр (Ultimate Nutrition)
+                  </h4>
+                  <p class="product-item__content-text">
+                    В наличии
+                  </p>
+                  <div class="product-item__botton">
+                    <div class="product-item__price">
+                      <div class="product-item__price-big">
+                        750 руб
+                      </div>
+                      <div class="product-item__price-small">
+                        1050 руб
+                      </div>
+                    </div>
+                    <div class="star" data-rateyo-rating="4.5"></div>
+                  </div>
+                </a>
+              </div>
+              <div class="product-item">
+                <a class="product-item__link-img" href="#">
+                  <img class="product-item__img" src="images/hit/2.png" alt="product image">
+                </a>
+                <button class="product-item__btn">
+                  <p class="product-item__btn-text">
+                    Положить в корзину
+                  </p>
+                </button>
+                <a class="product-item__content" href="#">
+                  <h4 class="product-item__content-title">
+                    Animal Pak 44 пак. (Universal Nutrition)
+                  </h4>
+                  <p class="product-item__content-text">
+                    В наличии
+                  </p>
+                  <div class="product-item__botton">
+                    <div class="product-item__price">
+                      <div class="product-item__price-big">
+                        2990 руб
+                      </div>
+                      <div class="product-item__price-small">
+                        3490 руб
+                      </div>
+                    </div>
+                    <div class="star" data-rateyo-rating="3.5"></div>
+                  </div>
+                </a>
+              </div>
+              <div class="product-item">
+                <a class="product-item__link-img" href="#">
+                  <img class="product-item__img" src="images/hit/3.png" alt="product image">
+                </a>
+                <button class="product-item__btn">
+                  <p class="product-item__btn-text">
+                    Положить в корзину
+                  </p>
+                </button>
+                <a class="product-item__content" href="#">
+                  <h4 class="product-item__content-title">
+                    Whey Protein 2268 гр 5lb (RPS Nutrition)
+                  </h4>
+                  <p class="product-item__content-text">
+                    В наличии
+                  </p>
+                  <div class="product-item__botton">
+                    <div class="product-item__price">
+                      <div class="product-item__price-big">
+                        2210 руб
+                      </div>
+                      <div class="product-item__price-small">
+                        2880 руб
+                      </div>
+                    </div>
+                    <div class="star" data-rateyo-rating="4"></div>
+                  </div>
+                </a>
+              </div>
+              <div class="product-item">
+                <a class="product-item__link-img" href="#">
+                  <img class="product-item__img" src="images/hit/1.png" alt="product image">
+                </a>
+                <button class="product-item__btn">
+                  <p class="product-item__btn-text">
+                    Положить в корзину
+                  </p>
+                </button>
+                <a class="product-item__content" href="#">
+                  <h4 class="product-item__content-title">
+                    Lean Protein Shake 750 гр (VPLab Nutrition)
+                  </h4>
+                  <p class="product-item__content-text">
+                    В наличии
+                  </p>
+                  <div class="product-item__botton">
+                    <div class="product-item__price">
+                      <div class="product-item__price-big">
+                        2220 руб
+                      </div>
+                      <div class="product-item__price-small">
+                        2900 руб
+                      </div>
+                    </div>
+                    <div class="star" data-rateyo-rating="4.5"></div>
+                  </div>
+                </a>
+              </div>
+              <div class="product-item">
+                <a class="product-item__link-img" href="#">
+                  <img class="product-item__img" src="images/hit/1.png" alt="product image">
+                </a>
+                <button class="product-item__btn">
+                  <p class="product-item__btn-text">
+                    Положить в корзину
+                  </p>
+                </button>
+                <a class="product-item__content" href="#">
+                  <h4 class="product-item__content-title">
+                    BCAA Powder 12000 228 гр (Ultimate Nutrition)
+                  </h4>
+                  <p class="product-item__content-text">
+                    В наличии
+                  </p>
+                  <div class="product-item__botton">
+                    <div class="product-item__price">
+                      <div class="product-item__price-big">
+                        750 руб
+                      </div>
+                      <div class="product-item__price-small">
+                        1050 руб
+                      </div>
+                    </div>
+                    <div class="star" data-rateyo-rating="2.5"></div>
+                  </div>
+                </a>
+              </div>
+              <div class="product-item">
+                <a class="product-item__link-img" href="#">
+                  <img class="product-item__img" src="images/hit/2.png" alt="product image">
+                  </a>
+                  <button class="product-item__btn">
+                    <p class="product-item__btn-text">
+                      Положить в корзину
+                    </p>
+                  </button>
+                  <a class="product-item__content" href="#">
+                    <h4 class="product-item__content-title">
+                      Animal Pak 44 пак. (Universal Nutrition)
+                    </h4>
+                    <p class="product-item__content-text">
+                      В наличии
+                    </p>
+                    <div class="product-item__botton">
+                      <div class="product-item__price">
+                        <div class="product-item__price-big">
+                          2990 руб
+                        </div>
+                        <div class="product-item__price-small">
+                          3490 руб
+                        </div>
+                      </div>
+                      <div class="star" data-rateyo-rating="3"></div>
+                    </div>
+                  </a>
+              </div>
+              <div class="product-item">
+                <a class="product-item__link-img" href="#">
+                  <img class="product-item__img" src="images/hit/3.png" alt="product image">
+                </a>
+                <button class="product-item__btn">
+                  <p class="product-item__btn-text">
+                    Положить в корзину
+                  </p>
+                </button>
+                <a class="product-item__content" href="#">
+                  <h4 class="product-item__content-title">
+                    Whey Protein 2268 гр 5lb (RPS Nutrition)
+                  </h4>
+                  <p class="product-item__content-text">
+                    В наличии
+                  </p>
+                  <div class="product-item__botton">
+                    <div class="product-item__price">
+                      <div class="product-item__price-big">
+                        2210 руб
+                      </div>
+                      <div class="product-item__price-small">
+                        2880 руб
+                      </div>
+                    </div>
+                    <div class="star" data-rateyo-rating="4.5"></div>
+                  </div>
+                </a>
+              </div>
+              <div class="product-item">
+                <a class="product-item__link-img" href="#">
+                  <img class="product-item__img" src="images/hit/4.png" alt="product image">
+                </a>
+                <button class="product-item__btn">
+                  <p class="product-item__btn-text">
+                    Положить в корзину
+                  </p>
+                </button>
+                <a class="product-item__content" href="#">
+                  <h4 class="product-item__content-title">
+                    Lean Protein Shake 750 гр (VPLab Nutrition)
+                  </h4>
+                  <p class="product-item__content-text">
+                    В наличии
+                  </p>
+                  <div class="product-item__botton">
+                    <div class="product-item__price">
+                      <div class="product-item__price-big">
+                        2220 руб
+                      </div>
+                      <div class="product-item__price-small">
+                        2900 руб
+                      </div>
+                    </div>
+                    <div class="star" data-rateyo-rating="3.5"></div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="pagination">
+              <div class="pagination__text">Страница</div>
+              <ul class="pagination__list">
+                <li class="pagination__item">
+                  <a class="pagination__item-link pagination__item-link--active" href="#">1</a>
+                </li>
+                <li class="pagination__item">
+                  <a class="pagination__item-link" href="#">2</a>
+                </li>
+                <li class="pagination__item">
+                  <a class="pagination__item-link" href="#">3</a>
+                </li>
+                <li class="pagination__item">
+                  <a class="pagination__item-link" href="#">4</a>
+                </li>
+                <li class="pagination__item">
+                  <span class="pagination__item-link">...</span>
+                </li>
+                <li class="pagination__item">
+                  <a class="pagination__item-link" href="#">8</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__item footer__item-logo">
+          <a class="logo" href="#">
+            <img src="images/logo.png" alt="logo">
+          </a>
+        </div>
+        <div class="footer__item footer__item-list">
+          <ul class="footer__list">
+            <li class="footer__list-item">
+              <a class="footer__list-link" href="#">
+                Каталог
+              </a>
+            </li>
+            <li class="footer__list-item">
+              <a class="footer__list-link" href="#">
+                Производители
+              </a>
+            </li>
+            <li class="footer__list-item">
+              <a class="footer__list-link" href="#">
+                Скидки
+              </a>
+            </li>
+            <li class="footer__list-item">
+              <a class="footer__list-link" href="#">
+                Доставка и оплата
+              </a>
+            </li>
+            <li class="footer__list-item">
+              <a class="footer__list-link" href="#">
+                О компании
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__item footer__item-contacts">
+          <div class="contacts">
+            <p class="contacts__title">Контакты</p>
+            <a class="contacts__tel" href="tel:+79233454545">+7 (923) 345- 45-45</a>
+            <a class="contacts__email" href="mailto:body_sport@gmail.com">body_sport@gmail.com</a>
+          </div>
+        </div>
+        <div class="footer__item">
+          <ul class="socials__list">
+            <li class="socials__list-item">
+              <a class="socials__list-link" href="#">
+                <img class="socials__list-icon" src="images/icon/vk.png" alt="social icons">
+              </a>
+            </li>
+            <li class="socials__list-item">
+              <a class="socials__list-link" href="#">
+                <img class="socials__list-icon" src="images/icon/facebook.png" alt="social icons">
+              </a>
+            </li>
+            <li class="socials__list-item">
+              <a class="socials__list-link" href="#">
+                <img class="socials__list-icon" src="images/icon/instagram.png" alt="social icons">
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>
