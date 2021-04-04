@@ -1,5 +1,9 @@
 $ (function (){
 
+
+$('.basket-order__remove').on('click', function () {
+  $(this).parent().parent().remove();
+});
   
 
   var $range = $("#input");
@@ -100,7 +104,5 @@ $ (function (){
   //     .trigger('refresh');
   // });
 
-  $('.catalog__boxSelect-select, .brands__select, .header-top__item-filter, .connection__select, .product-form__number-input, .product-form__taste-select, .basket-order__quantity-input').styler();
-
-
+  $('.catalog__boxSelect-select, .brands__select, .header-top__item-filter, .connection__select, .product-form__number-input, .product-form__taste-select, .basket-order__quantity-input, .manufacturers__select, .basket-delivery__select').styler();
 });

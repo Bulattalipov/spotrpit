@@ -115,7 +115,7 @@
   </header>
 
   <main class="main">
-    <section class="basket">
+    <section class="basket basket-delivery">
       <div class="container">
         <h2 class="title basket__title">Оформление заказа</h2>
         <div class="basket__lines">
@@ -152,23 +152,40 @@
           </a>
         </div>
         <div class="basket__inner">
-          <div class="basket__info">
-            <h3 class="basket__info-title">Контактная информация</h3>
-            <form class="basket-form" action="#">
-              <p class=" basket-form__title">ФИО*</p>
-              <input class="basket-form__input" type="text">
-              <p class="basket-form__title">Телефон*</p>
-              <input class="basket-form__input" type="text">
-              <p class="basket-form__title">Город*</p>
-              <input class="basket-form__input" type="text">
-              <label class="basket-form__confirmation">
-                <input class="basket-form__confirmation-input" type="checkbox">
-                <span class="basket-form__confirmation-checkbox"></span>
-                <span class="basket-form__confirmation-text">
-                Подтверждаю, что я ознакомлен и согласен с условиями <a href="#">Политики обработки персональных данных</a>
-                </span>
-              </label>
-              <button class="basket-form__btn" type="submit">Продолжить</button>
+          <div class="basket-delivery__info">
+            <h3 class="basket-delivery__info-title">Способ получения товара</h3>
+            <form class="basket-delivery__form" action="#">
+              <div class="basket-delivery__item">
+                <label class="basket-delivery__label">
+                  <input class="basket-delivery__input" type="radio" name="metods" checked>
+                  <span class="basket-delivery__radio"></span>
+                  Самовывоз из магазина
+                </label>
+                <div class="basket-delivery__price">Бесплатно</div>
+              </div>
+              <select class="basket-delivery__select">
+                <option value="1">пр.Комсомольский 18</option>
+                <option value="1">пр.Мира 56</option>
+                <option value="1">ул.Советская 19</option>
+                <option value="1">ул.Московская 23</option>
+              </select>
+              <div class="basket-delivery__item">
+                <label class="basket-delivery__label">
+                  <input class="basket-delivery__input" type="radio" name="metods">
+                  <span class="basket-delivery__radio"></span>
+                  Доставка курьером по городу
+                </label>
+                <div class="basket-delivery__price">250-500 руб</div>
+              </div>
+              <div class="basket-delivery__item">
+                <label class="basket-delivery__label">
+                  <input class="basket-delivery__input" type="radio" name="metods">
+                  <span class="basket-delivery__radio"></span>
+                  Почта России (10-12 дней)
+                </label>
+                <div class="basket-delivery__price">370 руб</div>
+              </div>
+              <button class="basket-delivery__form-btn" type="submit">Продолжить</button>
             </form>
           </div>
           <div class="basket__order">
