@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sportpit</title>
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="header-top">
+      <div class="container">
+        <div class="header-top__inner">
+          <div class="header-top__item">
+            <div class="header-top__item-select">
+              <span>ваш город</span>
+              <select class="header-top__item-filter">
+                <option value="1">Москва</option>
+                <option value="">Казань</option>
+                <option value="">Екатеринбург</option>
+                <option value="">Сочи</option>
+              </select>
+            </div>
+          </div>
+          <div class="header-top__item">
+            <div class="contacts">
+              <a class="contacts__tel" href="tel:+79233454545">+7 (923) 345- 45-45</a>
+              <a class="contacts__email" href="mailto:body_sport@gmail.com">body_sport@gmail.com</a>
+            </div>
+          </div>
+          <div class="header-top__item">
+            <a class="header-top__item-link" href="#">
+              Заказать звонок
+            </a>
+          </div>
+          <div class="header-top__item">
+            <form class="header-top__item-form" action="#">
+              <input class="header-top__item-input" type="text" placeholder="Поиск">
+              <button class="header-top__item-btn">
+                <img class="header-top__item-search" src="images/icon/search.svg" alt="search icon">
+              </button>
+            </form>
+          </div>
+          <div class="header-top__item">
+            <ul class="socials__list">
+              <li class="socials__list-item">
+                <a class="socials__list-link" href="#">
+                  <img class="socials__list-icon" src="images/icon/vk.png" alt="social icons">
+                </a>
+              </li>
+              <li class="socials__list-item">
+                <a class="socials__list-link" href="#">
+                  <img class="socials__list-icon" src="images/icon/facebook.png" alt="social icons">
+                </a>
+              </li>
+              <li class="socials__list-item">
+                <a class="socials__list-link" href="#">
+                  <img class="socials__list-icon" src="images/icon/instagram.png" alt="social icons">
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="header-top__item">
+            <a class="header-top__basket" href="#">
+              <p class="header-top__basket-text">
+                Корзина
+              </p>
+              <div class="header-top__basket-box">
+                <img class="header-top__basket-img" src="images/icon/basket.svg" alt="basket icon">
+                <span>2</span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="header-botton">
+      <div class="container">
+        <div class="header-botton__inner">
+          <a class="logo" href="#">
+            <img src="images/logo.png" alt="logo">
+          </a>
+          <ul class="header-botton__list">
+            <li class="header-botton__list-icon">
+              <a class="header-botton__list-link" href="catalog.html">
+                Каталог
+              </a>
+            </li>
+            <li class="header-botton__list-icon">
+              <a class="header-botton__list-link" href="manufacturers.html">
+                Производители
+              </a>
+            </li>
+            <li class="header-botton__list-icon">
+              <a class="header-botton__list-link" href="discounts.html">
+                Скидки
+              </a>
+            </li>
+            <li class="header-botton__list-icon">
+              <a class="header-botton__list-link" href="delivery.html">
+                Доставка и оплата
+              </a>
+            </li>
+            <li class="header-botton__list-icon">
+              <a class="header-botton__list-link" href="about-us.html">
+                О компании
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="main">
+    <section class="basket basket-delivery basket-payment">
+      <div class="container">
+        <h2 class="title basket__title">Оформление заказа</h2>
+        <div class="basket__lines">
+          <div class="basket__lines-wrapper">
+            <div class="basket__line"></div>
+            <div class="basket__line"></div>
+            <div class="basket__line"></div>
+          </div>
+        </div>
+        <div class="basket__items">
+          <a class="basket__item" href="#">
+            <div class="basket__box-icon">
+              <img class="basket__icon" src="images/icon/info-icon.svg" alt="backet icons">
+            </div>
+            <div class="basket__item-text">Контактная информация</div>
+          </a>
+          <a class="basket__item" href="#">
+            <div class="basket__box-icon">
+              <img class="basket__icon" src="images/icon/delivery-icon.svg" alt="backet icons">
+            </div>
+            <div class="basket__item-text">Доставка</div>
+          </a>
+          <a class="basket__item" href="#">
+            <div class="basket__box-icon">
+              <img class="basket__icon" src="images/icon/creditCard-basked.svg" alt="backet icons">
+            </div>
+            <div class="basket__item-text">Оплата</div>
+          </a>
+          <a class="basket__item" href="#">
+            <div class="basket__box-icon">
+              <img class="basket__icon" src="images/icon/confirmation-icon.svg" alt="backet icons">
+            </div>
+            <div class="basket__item-text">Подтверждение</div>
+          </a>
+        </div>
+        <div class="basket__inner">
+          <div class="basket-payment__info">
+            <h3 class="basket-payment__info-title">Способ оплаты</h3>
+            <form class="basket-payment__form" action="#">
+              <label class="basket-payment__label">
+                <input type="radio" name="way" checked>
+                <span class="basket-payment__radio"></span>
+                <div class="basket-payment__text">Оплата наличными при получении</div>
+              </label>
+              <label class="basket-payment__label">
+                <input type="radio" name="way">
+                <span class="basket-payment__radio"></span>
+                <div class="basket-payment__text">Оплата банковской картой</div>
+              </label>
+              <div class="basket-payment__cards">
+                <label class="basket-payment__label">
+                  <img class="basket-payment__card-img" src="images/cards/1.png" alt="">
+                  <input type="radio" name="cards" checked>
+                  <span class="basket-payment__radio"></span>
+                </label>
+                <label class="basket-payment__label">
+                  <img class="basket-payment__card-img" src="images/cards/2.png" alt="">
+                  <input type="radio" name="cards">
+                  <span class="basket-payment__radio"></span>
+                </label>
+                <label class="basket-payment__label">
+                  <img class="basket-payment__card-img" src="images/cards/3.png" alt="">
+                  <input type="radio" name="cards">
+                  <span class="basket-payment__radio"></span>
+                </label>
+              </div>
+              <div class="basket-payment__title-input">Номер карты</div>
+              <input class="basket-payment__input basket-payment__input-cart" type="text">
+              <div class="basket-payment__box-inputs">
+                <div class="basket-payment__box-input">
+                  <div class="basket-payment__title-input">Срок действия</div>
+                  <div class="basket-payment__minbox-input">
+                    <input class="basket-payment__input" type="text">
+                    <span>/</span>
+                    <input class="basket-payment__input" type="text">
+                  </div>
+                </div>
+                <div class="basket-payment__box-input">
+                  <div class="basket-payment__title-input">Код безопасности</div>
+                  <input class="basket-payment__input" type="text">
+                </div>
+              </div>
+              <div class="basket-payment__title-input">Имя владельца карты</div>
+              <input class="basket-payment__input" type="text">
+              <div class="basket-payment__title-input">Фамилия владельца карты</div>
+              <input class="basket-payment__input" type="text">
+              <button class="basket-payment__form-btn" type="submit">Продолжить</button>
+            </form>
+          </div>
+          <div class="basket__order">
+            <h3 class="basket__order-title">Ваш заказ</h3>
+            <div class="basket-order__items">
+              <div class="basket-order__item">
+                <div class="basket-order__item-inner">
+                  <div class="basket-order__info">
+                    <div class="basket-order__info-box">
+                      <img class="basket-order__img" src="images/basket/1.png" alt="">
+                      <div class="basket-order__content">
+                        <div class="basket-order__content-title">Vitamin C-1000 Sustained Release</div>
+                        <p class="basket-order__content-number">100 капсул</p>
+                        <p class="basket-order__content-taste">Вкус:<span>Банан</span></p>
+                        <div class="basket-order__quantity">
+                          <div class="basket-order__quantity-text">
+                            Количесвто:
+                          </div>
+                          <input class="basket-order__quantity-input" type="number" value="1">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <button class="basket-order__remove">
+                    <img src="images/icon/remove.svg" alt="">
+                  </button>
+                </div>
+                <div class="basket-order__price">
+                  Сумма: <span>750 руб</span>
+                </div>
+              </div>
+              <div class="basket-order__item">
+                <div class="basket-order__item-inner">
+                  <div class="basket-order__info">
+                    <div class="basket-order__info-box">
+                      <img class="basket-order__img" src="images/basket/2.png" alt="">
+                      <div class="basket-order__content">
+                        <div class="basket-order__content-title">R3Build EDGE 475г 1.05lb BSN</div>
+                        <p class="basket-order__content-number">Порошок <span>25 порций</span></p>
+                        <p class="basket-order__content-taste">Вкус:<span>Банан</span></p>
+                        <div class="basket-order__quantity">
+                          <div class="basket-order__quantity-text">
+                            Количесвто:
+                          </div>
+                          <input class="basket-order__quantity-input" type="number" value="1">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <button class="basket-order__remove">
+                    <img src="images/icon/remove.svg" alt="">
+                  </button>
+                </div>
+                <div class="basket-order__price">
+                  Сумма: <span>1980 руб</span>
+                </div>
+              </div>
+              <div class="basket-order__total">Общая сумма заказа: <span>2730 руб</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__item footer__item-logo">
+          <a class="logo" href="#">
+            <img src="images/logo.png" alt="logo">
+          </a>
+        </div>
+        <div class="footer__item footer__item-list">
+          <ul class="footer__list">
+            <li class="footer__list-item">
+              <a class="footer__list-link" href="#">
+                Каталог
+              </a>
+            </li>
+            <li class="footer__list-item">
+              <a class="footer__list-link" href="#">
+                Производители
+              </a>
+            </li>
+            <li class="footer__list-item">
+              <a class="footer__list-link" href="#">
+                Скидки
+              </a>
+            </li>
+            <li class="footer__list-item">
+              <a class="footer__list-link" href="#">
+                Доставка и оплата
+              </a>
+            </li>
+            <li class="footer__list-item">
+              <a class="footer__list-link" href="#">
+                О компании
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__item footer__item-contacts">
+          <div class="contacts">
+            <p class="contacts__title">Контакты</p>
+            <a class="contacts__tel" href="tel:+79233454545">+7 (923) 345- 45-45</a>
+            <a class="contacts__email" href="mailto:body_sport@gmail.com">body_sport@gmail.com</a>
+          </div>
+        </div>
+        <div class="footer__item">
+          <ul class="socials__list">
+            <li class="socials__list-item">
+              <a class="socials__list-link" href="#">
+                <img class="socials__list-icon" src="images/icon/vk.png" alt="social icons">
+              </a>
+            </li>
+            <li class="socials__list-item">
+              <a class="socials__list-link" href="#">
+                <img class="socials__list-icon" src="images/icon/facebook.png" alt="social icons">
+              </a>
+            </li>
+            <li class="socials__list-item">
+              <a class="socials__list-link" href="#">
+                <img class="socials__list-icon" src="images/icon/instagram.png" alt="social icons">
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>
