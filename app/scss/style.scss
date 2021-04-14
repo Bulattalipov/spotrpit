@@ -1713,13 +1713,6 @@ ul.product-description__list{
       }
     }
   }
-  &__info{
-    margin-right: 30px;
-  }
-  &__info-title{
-    font-size: 30px;
-    margin-bottom: 40px;
-  }
   &__label{
     display: block;
     position: relative;
@@ -1808,6 +1801,27 @@ ul.product-description__list{
     cursor: pointer;
   }
 }
+
+
+.basket-confirmation{
+  .basket__item {
+    &:nth-child(4) {
+      .basket__box-icon {
+        background-color: $accent;
+      }
+    }
+  }
+  &__subtitle{
+    @extend %sourceSansPro-700;
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+  &__text + .basket-confirmation__text {
+    line-height: 23px;
+    margin-top: 12px;
+  }
+}
+
 
 
 

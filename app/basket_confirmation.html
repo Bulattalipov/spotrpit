@@ -115,7 +115,7 @@
   </header>
 
   <main class="main">
-    <section class="basket">
+    <section class="basket basket-delivery basket-payment basket-confirmation">
       <div class="container">
         <h2 class="title basket__title">Оформление заказа</h2>
         <div class="basket__lines">
@@ -153,81 +153,15 @@
         </div>
         <div class="basket__inner">
           <div class="basket__info">
-            <h3 class="basket__info-title">Контактная информация</h3>
-            <form class="basket-form" action="#">
-              <p class=" basket-form__title">ФИО*</p>
-              <input class="basket-form__input" type="text">
-              <p class="basket-form__title">Телефон*</p>
-              <input class="basket-form__input" type="text">
-              <p class="basket-form__title">Город*</p>
-              <input class="basket-form__input" type="text">
-              <label class="basket-form__confirmation">
-                <input class="basket-form__confirmation-input" type="checkbox">
-                <span class="basket-form__confirmation-checkbox"></span>
-                <span class="basket-form__confirmation-text">
-                Подтверждаю, что я ознакомлен и согласен с условиями <a href="#">Политики обработки персональных данных</a>
-                </span>
-              </label>
-              <button class="basket-form__btn" type="submit">Продолжить</button>
-            </form>
-          </div>
-          <div class="basket__order">
-            <h3 class="basket__order-title">Ваш заказ</h3>
-            <div class="basket-order__items">
-              <div class="basket-order__item">
-                <div class="basket-order__item-inner">
-                  <div class="basket-order__info">
-                    <div class="basket-order__info-box">
-                      <img class="basket-order__img" src="images/basket/1.png" alt="">
-                      <div class="basket-order__content">
-                        <div class="basket-order__content-title">Vitamin C-1000 Sustained Release</div>
-                        <p class="basket-order__content-number">100 капсул</p>
-                        <p class="basket-order__content-taste">Вкус:<span>Банан</span></p>
-                        <div class="basket-order__quantity">
-                          <div class="basket-order__quantity-text">
-                            Количесвто:
-                          </div>
-                          <input class="basket-order__quantity-input" type="number" value="1">
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <button class="basket-order__remove">
-                    <img src="images/icon/remove.svg" alt="">
-                  </button>
-                </div>
-                <div class="basket-order__price">
-                  Сумма: <span>750 руб</span>
-                </div>
-              </div>
-              <div class="basket-order__item">
-                <div class="basket-order__item-inner">
-                  <div class="basket-order__info">
-                    <div class="basket-order__info-box">
-                      <img class="basket-order__img" src="images/basket/2.png" alt="">
-                      <div class="basket-order__content">
-                        <div class="basket-order__content-title">R3Build EDGE 475г 1.05lb BSN</div>
-                        <p class="basket-order__content-number">Порошок <span>25 порций</span></p>
-                        <p class="basket-order__content-taste">Вкус:<span>Банан</span></p>
-                        <div class="basket-order__quantity">
-                          <div class="basket-order__quantity-text">
-                            Количесвто:
-                          </div>
-                          <input class="basket-order__quantity-input" type="number" value="1">
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <button class="basket-order__remove">
-                    <img src="images/icon/remove.svg" alt="">
-                  </button>
-                </div>
-                <div class="basket-order__price">
-                  Сумма: <span>1980 руб</span>
-                </div>
-              </div>
-              <div class="basket-order__total">Общая сумма заказа: <span>2730 руб</span></div>
-            </div>
+            <h3 class="basket__info-title">Подтверждение оплаты</h3>
+            <h4 class="basket-confirmation__subtitle">
+              Ваш заказ № 345 оформлен
+            </h4>
+            <p class="basket-confirmation__text">В ближайшее время с вами свяжется менеджер нашей фирмы для уточния
+              деталей заказа</p>
+            <p class="basket-confirmation__text">Обработка заказов происходит с 9.00 до 20.00 без выходных</p>
+            <p class="basket-confirmation__text">При необходимости вы можете уточнить информацию по вашему заказу по
+              телефону: +7(912) 345-56-43</p>
           </div>
         </div>
       </div>
