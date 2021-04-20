@@ -1823,7 +1823,70 @@ ul.product-description__list{
 }
 
 
-
+.about-company{
+  color: #000;
+  padding: 30px 0 110px;
+  &__title{
+    margin-bottom: 60px;
+  }
+  &__inner{
+    display: flex;
+  }
+  &__content{
+    width: 555px;
+    margin-right: 30px;
+  }
+  &__content-text{
+    line-height: 23px;
+  }
+  &__content-text + .about-company__content-text{
+    margin-top: 30px;
+  }
+  &__list-item{
+    padding-left: 18px;
+    position: relative;
+    &:before{
+      content: '';
+      position: absolute;
+      height: 7px;
+      width: 7px;
+      border-radius: 50%;
+      background-color: $accent;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 0;
+    }
+  }
+  &__info{
+    width: 555px;
+  }
+  &__items{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0px;
+  }
+  &__item{
+    width: 278px;
+    height: 236px;
+  }
+  &__item-text{
+    font-size: 20px;
+    margin-top: 10px;
+    width: 175px;
+    text-align: center;
+    line-height: 30px;
+  }
+  &__item-number{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .delivery-item__subtitle{
+    font-size: 50px;
+    @extend %sourceSansPro-700;
+  }
+}
 
 
 @import 'media';
