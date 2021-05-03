@@ -112,11 +112,55 @@
       margin-left: 0;
       padding: 0 15px;
   }
+  .about-company{
+    &__content{
+      width: 100%;
+    }
+    &__info{
+      display: none;
+    }
+  }
+  .catalog-content{
+    &__items{
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}
+
+@media (max-width: 950px) {
+  .basket{
+    &__inner{
+      flex-direction: column;
+    }
+    &__info{
+      margin-top: 40px;
+      width: 100%;
+    }
+    &__order{
+      order: -1;
+      width: 100%;
+
+    }
+  }
 }
 
 @media (max-width: 850px) {
   .connection{
     &__box-img{
+      display: none;
+    }
+  }
+  .manufacturers{
+    &__list-item{
+      flex: 1 0 33%;
+      max-width: 33%;
+    }
+  }
+  .page-404{
+    &__content{
+      max-width: 100%;
+    }
+    &__box{
       display: none;
     }
   }
@@ -131,6 +175,17 @@
       margin: 0 20px 50px;
     }
   }
+  .catalog{
+    &__inner{
+      flex-direction: column;
+    }
+    &__filters{
+      margin-bottom: 30px;
+    }
+    &__boxSelect{
+      margin-top: 20px;
+    }
+  }
 }
 @media (max-width: 750px){
   .hit,
@@ -138,6 +193,56 @@
     padding: 60px 0;
     &__title{
       margin-bottom: 70px;
+    }
+  }
+  .product{
+    &__inner{
+      flex-direction: column;
+    }
+    &__box-img{
+      margin: 0 auto;
+    }
+    &__content{
+      margin-top: 30px;
+    }
+    &__excerpt{
+      display: block;
+    }
+  }
+  .product-description{
+    margin-top: 30px;
+    display: none;
+    &__title{
+      display: none;
+    }
+  }
+  .related{
+    padding: 50px 0;
+  }
+}
+
+@media (max-width: 760px) {
+  .basket{
+    &__lines,
+    &__items,
+    &__order-title{
+      display: none;
+    }
+    &__title {
+      margin: 60px 0;
+    }
+    &__info-title{
+      text-align: center;
+    }
+  }
+  .basket-order{
+    &__items{
+      margin-top: 0;
+    }
+  }
+  .basket-confirmation{
+    .title{
+      display: none;
     }
   }
 }
@@ -163,6 +268,32 @@
       display: none !important;
     }
   }
+  .manufacturers {
+    &__list-item {
+      flex: 1 0 50%;
+      max-width: 50%;
+    }
+  }
+  .discounts-item{
+    flex-direction: column;
+    &__images{
+      margin: 0 auto 30px;
+    }
+  }
+  .page-404{
+    &__content-title{
+      font-size: 170px;
+      line-height: 200px;
+    }
+  }
+}
+
+@media (max-width: 630px) {
+  .product{
+    &__box-img{
+      width: 100%;
+    }
+  }
 }
 
 @media (max-width: 550px) {
@@ -170,16 +301,132 @@
   .connection{
     padding: 50px 0;
     &__title {
-      font-size: 30px;
-      line-height: 40px;
       margin-bottom: 40px;
     }
   }
   .advantage{
     padding-bottom: 10px;
+  }
+  .manufacturers {
+    padding-bottom: 40px;
+  }
+  .title{
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .about-company {
+    padding: 20px 0 40px;
+    &__title {
+      margin-bottom: 40px;
+    }
+  }
+  .basket-form{
+    &__input{
+      width: 100%;
+    }
+  }
+  .delivery{
+    padding: 20px 0 40px;
     &__title{
-      font-size: 30px;
-      line-height: 40px;
+      margin-bottom: 30px;
+    }
+  }
+  .delivery-item{
+    margin-bottom: 25px;
+    &__title{
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+    &__images{
+      display: none;
+    }
+    &__item{
+      margin-bottom: 12px;
+    }
+    &__content{
+      margin-left: 0;
+    }
+    &__content-title{
+      font-size: 16px;
+      margin: 0 0 13px;
+    }
+  }
+}
+
+@media (max-width: 500px){
+  .manufacturers {
+    &__list-item {
+      flex: 1 0 100%;
+      max-width: 100%;
+    }
+  }
+  .basket{
+    &__inner{
+      margin-bottom: 40px;
+    }
+  }
+  .basket-order{
+    &__items{
+      padding: 22px 20px 38px;
+    }
+  }
+  .basket-form{
+    &__confirmation-text{
+      font-size: 14px;
+      line-height: 20px;
+      width: 100%;
+    }
+  }
+  .catalog{
+    &__inner{
+      margin-top: 40px;
+    }
+  }
+  .catalog-content{
+    &__items{
+      gap: 15px;
+    }
+  }
+  .product-item{
+    &__botton{
+      flex-direction: column;
+      align-items: flex-start !important;
+    }
+    &__content{
+      padding: 10px 10px 20px;
+    }
+    .star{
+      order: -1;
+      margin-left: -5px;
+    }
+  }
+  .discounts{
+    padding: 20px 0 40px;
+  }
+  .discounts-item{
+    &__content{
+      margin-left: 0;
+    }
+  }
+}
+
+@media (max-width: 460px) {
+  .basket-delivery{
+    &__item{
+      justify-content: space-between;
+    }
+    &__price{
+      width: 100%;
+      text-align: end;
+    }
+  }
+}
+
+@media (max-width: 460px) {
+  .page-404{
+    &__content-title{
+      font-size: 140px;
+      line-height: 165px;
     }
   }
 }

@@ -29,9 +29,12 @@ body{
   padding: 45px 0 10px;
   &__list{
     display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 15px !important;
   }
   &__item{
     padding-right: 17px;
+    margin-bottom: 5px;
     position: relative;
     &::after{
       content: '';

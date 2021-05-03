@@ -66,12 +66,12 @@
     border: 2px solid $default;
     border-radius: 4px;
     background-color: #f8f6f6;
-    color: #c0bebe;
+    color: #1b1b1b;
     padding: 6px 40px 6px 10px;
     @extend %sourceSansPro-400; 
     overflow: hidden;
     &::placeholder{
-      color: #c0bebe;
+      color: #959595;
     }
   }
   &__item-btn{
@@ -474,7 +474,7 @@ ul.header-botton__list{
 
 .related{
   .slick-dots{
-    display: none;
+    display: none !important;
   }
   &__title{
     margin-bottom: 50px;
@@ -959,8 +959,8 @@ ul.manufacturers__list{
       border-radius: 50%;
       background-color: $accent;
       left: 0;
-      top: 50%;
-      transform: translateY(-50%);
+      top: 8px;
+      
     }
     span{
       color: #eb1515;
@@ -1044,7 +1044,31 @@ ul.manufacturers__list{
     font-size: 20px;
     line-height: 26px;
   }
-
+  &__buttons {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__buttons-show {
+    border-radius: 3px;
+    border: none;
+    background-color: $accent;
+    padding: 8px 21px;
+    font-size: 14px;
+    color: #000;
+    cursor: pointer;
+  }
+  &__buttons-reset {
+    border-radius: 3px;
+    border: none;
+    background-color: transparent;
+    padding: 8px 21px;
+    font-size: 14px;
+    color: #000;
+    cursor: pointer;
+    &:hover {
+      background-color: $accent;
+    }
+  }
 }
 
 .filter-category,
@@ -1150,31 +1174,6 @@ ul.manufacturers__list{
     text-align: center;
     line-height: 21px;
   }
-  &__buttons{
-    display: flex;
-    justify-content: space-between;
-  }
-  &__buttons-show{
-    border-radius: 3px;
-    border: none;
-    background-color: $accent;
-    padding: 8px 21px;
-    font-size: 14px;
-    color: #000;
-    cursor: pointer;
-  }
-  &__buttons-reset{
-    border-radius: 3px;
-    border: none;
-    background-color: transparent;
-    padding: 8px 21px;
-    font-size: 14px;
-    color: #000;
-    cursor: pointer;
-    &:hover{
-    background-color: $accent;
-    }
-  }
 }
 
 .catalog-content{
@@ -1217,8 +1216,9 @@ ul.manufacturers__list{
     box-shadow: 0px 1px 35px 0px rgba(161, 160, 160, 0.19);
   }
   &__title{
+    margin-top: -12px;
     margin-bottom: 20px;
-    line-height: 24px;
+    text-align: left;
   }
   &__category,
   &__manufacturers,
@@ -1253,6 +1253,12 @@ ul.manufacturers__list{
     font-size: 20px;
     margin-bottom: 30px;
     @extend %sourceSansPro-700;
+  }
+  &__excerpt {
+    display: none;
+    text-decoration: underline;
+    cursor: pointer;
+    margin-top: 55px;
   }
 }
 
@@ -1410,8 +1416,8 @@ ul.manufacturers__list{
 }
 
 .product-description{
+  margin-top: 55px;
   &__title{
-    margin-top: 55px;
     margin-bottom: 25px;
   }
   &__text{
@@ -1433,7 +1439,7 @@ ul.product-description__list{
 .basket{
   color: #000;
   &__title{
-    margin: 80px;
+    margin: 80px 0;
   }
   &__lines{
     margin: 0 70px;
@@ -1497,6 +1503,7 @@ ul.product-description__list{
   &__order-title,
   &__info-title{
     font-size: 30px;
+    line-height: 40px;
     margin-bottom: 30px;
   }
   &__order{
@@ -1547,6 +1554,7 @@ ul.product-description__list{
     margin-left: 8px;
     width: 400px;
     a{
+      display: block;
       color: #000;
       text-decoration: underline;
     }
@@ -1581,6 +1589,9 @@ ul.product-description__list{
     object-fit: contain;
     margin-top: 5px;
     margin-right: 12px;
+  }
+  &__content{
+    margin-right: 15px;
   }
   &__content-title{
     @extend %sourceSansPro-700;
@@ -1638,13 +1649,6 @@ ul.product-description__list{
         background-color: $accent;
       }
     }
-  }
-  &__info{
-    margin-right: 30px;
-  }
-  &__info-title{
-    font-size: 30px;
-    margin-bottom: 40px;
   }
   &__item{
     display: flex;
@@ -1923,7 +1927,7 @@ ul.product-description__list{
   &__images{
     background-image: url(../images/icon/points_small-gray.png);
     background-repeat: no-repeat;
-    min-width: 114px;
+    width: 114px;
     height: 90px;
     position: relative;
     margin-right: 10px;
@@ -1965,8 +1969,7 @@ ul.product-description__list{
       width: 7px;
       border-radius: 50%;
       background-color: $accent;
-      top: 50%;
-      transform: translateY(-50%);
+      top: 8px;
       left: 0;
     }
   }

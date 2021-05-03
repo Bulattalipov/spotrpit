@@ -13,7 +13,7 @@ function browsersync(){
       baseDir: 'app/'
     },
     notify: false
-  })
+  });
 }
 
 

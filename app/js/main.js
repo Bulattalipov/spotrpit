@@ -1,4 +1,13 @@
+
 $ (function (){
+
+  $('.product__excerpt').on('click', function(){
+    if ($(this).next().is(':visible')) {
+      $(this).next().hide();
+    } else {
+      $(this).next().show();
+    }
+  });
 
   $('.header-top__items-btn').on('click', function () {
     $('.header').toggleClass('header--active');
